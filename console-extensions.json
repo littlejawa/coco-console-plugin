@@ -48,7 +48,7 @@
       "perspective": "admin",
       "section": "confidential-containers",
       "name": "%plugin__coco-openshift-console-plugin~Overview%",
-      "href": "/confidential-containers"
+      "href": "/confidential-containers/overview"
     },
     "flags": { "required": ["COCO_KATACONFIG"] }
   },
@@ -112,6 +112,15 @@
     "properties": {
       "exact": true,
       "path": "/confidential-containers",
+      "component": { "$codeRef": "ConfidentialContainersOverviewRedirect" }
+    },
+    "flags": { "required": ["COCO_KATACONFIG"] }
+  },
+  {
+    "type": "console.page/route",
+    "properties": {
+      "exact": true,
+      "path": "/confidential-containers/overview",
       "component": { "$codeRef": "ConfidentialContainersOverview" }
     },
     "flags": { "required": ["COCO_KATACONFIG"] }

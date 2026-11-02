@@ -79,6 +79,7 @@
     "description": "Create, configure, manage, and observe confidential containers (Kata + TEE) on OpenShift sandboxed containers.",
     "exposedModules": {
       "ConfidentialContainersOverview": "./components/ConfidentialContainersOverview",
+      "ConfidentialContainersOverviewRedirect": "./components/ConfidentialContainersOverviewRedirect",
       "CocoSetup": "./components/CocoSetup",
       "ConfidentialWorkloadsList": "./components/ConfidentialWorkloadsList",
       "ConfidentialWorkloadDetail": "./components/ConfidentialWorkloadDetail",
