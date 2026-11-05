@@ -1,0 +1,44 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Group all linter and formatter updates",
+      "groupName": "linters and formatters",
+      "matchPackageNames": ["/eslint/", "/stylelint/", "/prettier/"]
+    },
+    {
+      "description": "Group PatternFly updates (they release together)",
+      "groupName": "PatternFly",
+      "matchPackageNames": ["@patternfly/{/,}**"]
+    },
+    {
+      "description": "Group build tooling updates",
+      "matchPackageNames": [
+        "webpack",
+        "webpack-cli",
+        "webpack-dev-server",
+        "css-loader",
+        "style-loader",
+        "swc-loader",
+        "copy-webpack-plugin",
+        "fork-ts-checker-webpack-plugin"
+      ],
+      "groupName": "build tooling"
+    },
+    {
+      "description": "Group type definition updates",
+      "groupName": "type definitions",
+      "matchPackageNames": ["@types/{/,}**"]
+    },
+    {
+      "description": "Group test tooling updates",
+      "groupName": "testing-library",
+      "matchPackageNames": ["@testing-library/{/,}**"]
+    },
+    {
+      "description": "Group Dockerfile base image updates",
+      "matchManagers": ["dockerfile"],
+      "groupName": "dockerfile base images"
+    }
+  ]
+}
